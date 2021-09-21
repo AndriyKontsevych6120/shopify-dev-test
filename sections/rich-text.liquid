@@ -7,6 +7,15 @@
 <div class="{% unless section.settings.full_width %}page-width{% endunless %}">
   <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
+    <ul>
+      {% assign my-arr = "head,body,hands,legs" %}
+      {% assign bodyPies = my-arr | split "," %}
+      {% for pies in bodyPies %}
+      <li>
+        {{ pies }}
+      </li>
+      {% endfor %}
+    </ul>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
