@@ -8,11 +8,11 @@
   <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
     <ul>
-      {% assign my-arr = "head,body,hands,legs" %}
-      {% assign bodyPies = my-arr | split "," %}
-      {% for pies in bodyPies %}
+      {% assign myArr = "head,body,hands,legs,clothes" %}
+      {% assign bodyPies = myArr | split "," %}
+      {% for piece in bodyPies %}
       <li>
-        {{ pies }}
+        {{ piece }}
       </li>
       {% endfor %}
     </ul>
