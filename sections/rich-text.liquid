@@ -9,7 +9,7 @@
     <div class="rich-text__blocks">
     <ul>
       {% assign myArr = "head,body,hands,legs,clothes" %}
-      {% assign bodyPies = myArr | split "," %}
+      {% assign bodyPies = myArr | split: "," %}
       {% for piece in bodyPies %}
       <li>
         {{ piece }}
