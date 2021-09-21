@@ -1,0 +1,9 @@
+# Ignore everything
+node_modules/*
+uploads
+upgrade
+
+
+# But not these files...
+!.gitignore
+# etc...
